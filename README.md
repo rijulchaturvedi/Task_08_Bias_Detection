@@ -79,7 +79,7 @@ Task_08_Bias_Detection_F1/
 │   └── 📁 figures/                  # Auto-generated visualizations
 │
 ├── 📁 data/                         # Raw CSVs (excluded from GitHub)
-│   ├── README.md                    # Placeholder; actual CSVs not committed
+│   └── README.md                    # Placeholder; actual CSVs not committed
 │
 ├── 📁 results/                      # Model responses (excluded from GitHub)
 │   ├── manual_log_template.csv      # Template to record Gemini/Claude outputs
