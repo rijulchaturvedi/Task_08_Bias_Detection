@@ -96,5 +96,19 @@ The ground truth file is automatically generated as: analysis/ground_truth_drive
 ## 🧪 How to Run (Manual Mode – No APIs)
 
 ### Step 1 – Generate Prompts
-```bash
+bash
 python src/experiment_design.py --season 2022 --out prompts
+
+
+### Step 2 – Run in Chat UIs
+	1.	Open Gemini 2.5 Pro or Claude Sonnet 4.5
+	2.	Copy prompts from prompts_for_chat/ (or docs/All_Prompts_F1.docx)
+	3.	Paste one prompt per clean chat session
+	4.	Log each response in results/manual_log_template.csv
+
+### Step 3 – Convert to JSONL for Analysis
+python src/convert_manual_to_jsonl.py --csv results/manual_log_template.csv --out results/responses.jsonl
+
+### Step 4 – Analyze
+python src/analyze_bias.py --results_dir results --out analysis
+python src/validate_claims.py --dataset analysis/ground_truth_drivers_2022.csv --results_dir results --out analysis
