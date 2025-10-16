@@ -39,7 +39,7 @@ The ground truth file is automatically generated as: analysis/ground_truth_drive
 
 ## ⚙️ Repository Structure
 
-Task_08_Bias_Detection_F1/
+~~~ Task_08_Bias_Detection_F1/
 │
 ├── 📁 src/                          # Core experiment scripts
 │   ├── experiment_design.py         # Builds anonymized F1 dataset & generates prompt sets
@@ -90,6 +90,7 @@ Task_08_Bias_Detection_F1/
 ├── .gitignore                       # Prevents committing raw data/results
 ├── .github/workflows/lint.yml       # Optional CI workflow for linting
 └── README.md                        # Project overview & usage guide
+~~~
 ---
 
 ## 🧪 How to Run (Manual Mode – No APIs)
