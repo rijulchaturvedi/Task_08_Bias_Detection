@@ -41,38 +41,55 @@ The ground truth file is automatically generated as: analysis/ground_truth_drive
 
 Task_08_Bias_Detection_F1/
 │
-├── src/                     # Core experiment scripts
-│   ├── experiment_design.py     # Builds prompts & ground truth
-│   ├── run_experiment.py        # Runs LLM queries (manual or API)
-│   ├── analyze_bias.py          # Sentiment & keyword analysis
-│   ├── validate_claims.py       # Checks LLM statements vs data
-│   └── convert_manual_to_jsonl.py  # Converts manual logs for analysis
+├── 📁 src/                          # Core experiment scripts
+│   ├── experiment_design.py         # Builds anonymized F1 dataset & generates prompt sets
+│   ├── run_experiment.py            # Runs or simulates LLM outputs (manual/API)
+│   ├── analyze_bias.py              # Sentiment & keyword-based bias analysis
+│   ├── validate_claims.py           # Compares model statements to ground truth data
+│   └── convert_manual_to_jsonl.py   # Converts manual chat logs (CSV) → JSONL
 │
-├── prompts/                 # Auto-generated prompt JSONs
-├── prompts_for_chat/        # Copy–paste .md prompts for chat UIs
+├── 📁 prompts/                      # JSON prompts for each bias condition
+│   ├── prompts_neutral_driver.json
+│   ├── prompts_positive_driver.json
+│   ├── prompts_negative_driver.json
+│   ├── prompts_neutral_driver_demo.json
+│   ├── prompts_positive_driver_demo.json
+│   ├── prompts_negative_driver_demo.json
+│   └── prompts_prime_constructor.json
 │
-├── docs/
-│   ├── REPORT.md                # October 15 deliverable report
-│   ├── MANUAL_RUN.md            # Instructions for manual Gemini/Claude runs
-│   ├── OCT15_PLANNING_SUMMARY.md# Qualtrics-ready planning summary
-│   └── All_Prompts_F1.docx      # Combined prompts for copy/paste
+├── 📁 prompts_for_chat/             # Copy–paste-ready .md prompt files for Gemini & Claude
+│   ├── neutral_driver.md
+│   ├── negative_driver.md
+│   ├── positive_driver.md
+│   ├── prime_constructor.md
+│   └── *_demo.md
 │
-├── analysis/
-│   ├── README.md
-│   └── figures/
+├── 📁 docs/                         # Reports & research documentation
+│   ├── REPORT.md                    # October 15 deliverable (executive summary & plan)
+│   ├── MANUAL_RUN.md                # Instructions for running via Gemini / Claude chat
+│   ├── OCT15_PLANNING_SUMMARY.md    # Qualtrics-ready summary for OPT reporting
+│   ├── All_Prompts_F1.docx          # All prompts combined for quick copy-paste
+│   └── README.md                    # (Optional) extra project notes
 │
-├── data/
-│   └── README.md                # No raw data committed (anonymized only)
+├── 📁 analysis/                     # Analytical outputs
+│   ├── ground_truth_drivers_2022.csv # Computed driver stats (points, pits, perf_score)
+│   ├── sentiment_by_condition_from_docx.csv
+│   ├── keywords_by_condition_from_docx.csv
+│   ├── validation_summary.csv
+│   └── 📁 figures/                  # Auto-generated visualizations
 │
-├── results/
-│   └── README.md                # Placeholder; real outputs excluded by .gitignore
+├── 📁 data/                         # Raw CSVs (excluded from GitHub)
+│   ├── README.md                    # Placeholder; actual CSVs not committed
 │
-├── config.yaml
-├── requirements.txt
-├── .gitignore
-└── README.md                    # (this file)
-
-
+├── 📁 results/                      # Model responses (excluded from GitHub)
+│   ├── manual_log_template.csv      # Template to record Gemini/Claude outputs
+│   └── README.md
+│
+├── config.yaml                      # Config file for reproducibility
+├── requirements.txt                 # Python dependencies
+├── .gitignore                       # Prevents committing raw data/results
+├── .github/workflows/lint.yml       # Optional CI workflow for linting
+└── README.md                        # Project overview & usage guide
 ---
 
 ## 🧪 How to Run (Manual Mode – No APIs)
