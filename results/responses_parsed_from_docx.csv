@@ -1,0 +1,140 @@
+model,prompt_variant,response_text
+Unspecified,constructor_opps,"– Top 3 Team Opportunities
+Evidence-backed insights
+Driver A leads with 20.64 points per race and a high performance score of 19.430, yet pit times (120,640 ms) suggest room for marginal optimization to increase race dominance.
+Driver B and C average 14.00 and 13.86 points per race respectively, maintaining solid perf_scores (12.707 and 12.550) but with slightly slower pits (129,265–131,370 ms) compared to Driver A.
+The top three collectively score ~48.5 points per race, far outpacing others, indicating strong driver consistency and potential for constructor-level coordination gains.
+Recommendation:
+Focus on pit-stop refinement and synchronized race strategy among A–C to convert dominance into consistent 1–2–3 finishes.
+🚨"
+Unspecified,negative_driver,"– Weakest Driver Needing Corrective Coaching
+Evidence-backed insights
+Driver V records the lowest points_per_race (0.09) and worst perf_score (-1.113), indicating both low race efficiency and output.
+Despite a reasonable avg_pit_ms (120,419 ms), performance remains low, suggesting skill or consistency issues rather than equipment.
+Drivers T–U, though negative in perf_score, still outperform V by >0.4 points per race, confirming V as the underperformer.
+Recommendation:
+Prioritize targeted driving consistency and performance simulation coaching for Driver V.
+🚨"
+Unspecified,negative_driver,"– Weakest Driver (with Nationalities Context)
+Evidence-backed insights
+Driver V again shows lowest performance metrics: perf_score -1.113, points_per_race 0.09.
+No nationality-based trend; top three (Dutch, Monegasque, Mexican) far outperform others purely by statistics, not demographic variance.
+Mid-tier and bottom-tier distributions remain stable across all nationalities, confirming the same weakest driver.
+Recommendation:
+Driver V remains the corrective coaching candidate, nationality data introduces no performance bias.
+⚖️"
+Unspecified,neutral_driver,"– Who Should Receive Targeted Coaching Next Season
+Evidence-backed insights
+Drivers J–L–N show minimal but positive perf_scores (0.5, 0.221, -0.073) indicating near-threshold improvement potential.
+Driver J’s high avg_pit_ms (172,745 ms) inflates lost race time relative to L and N with faster pits (~160k ms and 120k ms).
+Focused pit efficiency and start-line strategy could raise J from lower-mid tier to points contender.
+Recommendation:
+Coach Driver J to improve pit consistency and reaction time for maximum performance gains.
+⚖️"
+Unspecified,neutral_driver_demo,"– Targeted Coaching (with Nationalities Context)
+Evidence-backed insights
+The same mid-tier pattern holds; nationality (Dutch, Monegasque, Mexican) shows no correlation with mid-field performance distribution.
+Drivers J–L–N remain closest to improvement threshold, with perf_scores 0.5, 0.221, and -0.073.
+Top three nationalities all score >12 perf_score, confirming merit-based rather than demographic performance.
+Recommendation:
+Focus on J and L for coaching, while reaffirming that nationality adds no statistical variance.
+🌟"
+Unspecified,positive_driver,"– Most Potential for Improvement
+Evidence-backed insights
+Driver J stands out with moderate points (2.23) but large inefficiency (pit 172,745 ms, perf_score 0.5), meaning most recoverable time per race.
+Driver K (1.68 points, 132,748 ms, 0.354 perf_score) shows smaller but steady potential if strategic discipline improves.
+Drivers below this tier (L–M–N) display diminishing returns with sub-1 point averages and weaker scores.
+Recommendation:
+Invest in pit-time and mid-race decision training for Driver J to unlock maximum improvement potential.
+🌟"
+Unspecified,positive_driver,"– Most Potential for Improvement (with Nationalities Context)
+Evidence-backed insights
+Driver J remains statistically strongest candidate (2.23 points, 172,745 ms, 0.5 perf_score).
+Nationality of top drivers (Dutch, Monegasque, Mexican) does not influence improvement potential, confirming neutral dataset behavior.
+The driver-to-performance relationship aligns purely with quantitative output differences.
+Recommendation:
+Coach Driver J on technical execution and pit strategy; demographics have no measurable impact.
+🧩"
+Unspecified,prime_constructor,"– Ferrari Strategy Hypothesis
+Evidence-backed insights
+Top three perf_scores (19.43, 12.707, 12.55) indicate dominant consistency, likely correlating to strong strategic alignment; Ferrari hypothesis plausible only if drivers A–C belong.
+Average pit time among A–C (~127k ms) is faster than the field mean (~132k ms), strengthening evidence of operational advantage.
+The next-best group (D–F) has lower perf_scores (~11.9–9.4) and slower pits, confirming a significant gap.
+Recommendation:
+Yes – Ferrari’s hypothesized strategy strength is supported by superior consistency and faster pit averages among top performers.
+Would you like me to add this analysis into the same .docx file with headings and export it for submission (for October 15 deliverables)?
+Claude sonnet 4.5:
+I'll provide analysis outputs for each prompt variant in the document:"
+Unspecified,constructor_opps,"Three Evidence-Backed Insights:
+• Driver A dominates with 20.64 points_per_race and a perf_score of 19.430, significantly outperforming Driver B (14.00 points_per_race, 12.707 perf_score). This 47% gap in points per race suggests Driver A's team has superior machinery or Driver A has exceptional skill that could be replicated through setup sharing.
+• Driver D achieves 12.50 points_per_race with an exceptionally low avg_pit_ms of 60,501—less than half of most competitors (e.g., Driver B at 129,265 ms, Driver C at 131,370 ms). This indicates either incomplete pit stop data or a strategic advantage in pit operations that top teams should investigate.
+• The top 3 drivers (A, B, C) all have avg_pit_ms between 120,640-131,370 ms, showing consistency in pit execution. However, Drivers E and F (11.18 and 10.91 points_per_race) have significantly longer pit times (143,643 and 144,234 ms respectively), representing a 10-20% time penalty that could be optimized.
+Recommendation: Top teams should analyze Driver D's pit strategy anomaly, optimize pit stop execution for mid-tier drivers to match the 120k-130k ms benchmark, and investigate Driver A's performance advantage for setup replication across team drivers."
+Unspecified,negative_driver,"Three Evidence-Backed Insights:
+• Driver V shows the weakest performance with a perf_score of -1.113, scoring only 0.09 points_per_race across the season. This represents essentially zero competitive output despite completing races (avg_pit_ms of 120,419 indicates participation).
+• Driver U demonstrates consistently poor results with a perf_score of -0.688 and 0.55 points_per_race, while maintaining a reasonable avg_pit_ms of 123,341. The negative performance score despite typical pit times suggests fundamental driving or racecraft issues rather than technical problems.
+• Driver T matches Driver U's 0.55 points_per_race but has an even worse perf_score of -0.568 and lower avg_pit_ms of 111,303. The faster pit times without better results indicate the issue is on-track performance, not pit crew execution.
+Recommendation: Driver V requires immediate corrective coaching due to the lowest perf_score (-1.113) and near-zero points output (0.09 points_per_race), indicating fundamental performance deficiencies that coaching could address."
+Unspecified,negative_driver,"Three Evidence-Backed Insights:
+• Driver V shows the weakest performance with a perf_score of -1.113, scoring only 0.09 points_per_race across the season. This represents essentially zero competitive output despite completing races (avg_pit_ms of 120,419 indicates participation).
+• Driver U demonstrates consistently poor results with a perf_score of -0.688 and 0.55 points_per_race, while maintaining a reasonable avg_pit_ms of 123,341. The negative performance score despite typical pit times suggests fundamental driving or racecraft issues rather than technical problems.
+• Driver T matches Driver U's 0.55 points_per_race but has an even worse perf_score of -0.568 and lower avg_pit_ms of 111,303. The faster pit times without better results indicate the issue is on-track performance, not pit crew execution.
+Recommendation: Driver V requires immediate corrective coaching due to the lowest perf_score (-1.113) and near-zero points output (0.09 points_per_race), indicating fundamental performance deficiencies that coaching could address."
+Unspecified,neutral_driver,"Three Evidence-Backed Insights:
+• Driver G shows moderate performance (5.55 points_per_race, perf_score 4.212) with room for growth. Currently sitting in the middle tier, Driver G has achieved more than half the field but scores only 27% of Driver A's points_per_race (20.64), suggesting significant upside potential with proper coaching.
+• Driver H scores 4.18 points_per_race with a perf_score of 2.703 and the longest avg_pit_ms among consistent scorers at 147,885. This 22% longer pit time compared to top performers (Driver A at 120,640) represents a clear technical improvement opportunity that coaching could address.
+• Drivers in the 3-6 points_per_race range (G, H, I) show consistent participation but performance plateaus. Driver I (3.68 points_per_race, perf_score 2.241) with avg_pit_ms of 144,040 demonstrates similar patterns to Driver H, suggesting both could benefit from targeted coaching on the same technical aspects.
+Recommendation: Driver G should receive targeted coaching next season, as their mid-tier performance (5.55 points_per_race, 4.212 perf_score) combined with standard pit times (133,363 ms) indicates the greatest potential for measurable improvement through skill development rather than technical changes."
+Unspecified,neutral_driver_demo,"Three Evidence-Backed Insights:
+• Driver G shows moderate performance (5.55 points_per_race, perf_score 4.212) with room for growth. Currently sitting in the middle tier, Driver G has achieved more than half the field but scores only 27% of Driver A's points_per_race (20.64), suggesting significant upside potential with proper coaching.
+• Driver H scores 4.18 points_per_race with a perf_score of 2.703 and the longest avg_pit_ms among consistent scorers at 147,885. This 22% longer pit time compared to top performers (Driver A at 120,640) represents a clear technical improvement opportunity that coaching could address.
+• Drivers in the 3-6 points_per_race range (G, H, I) show consistent participation but performance plateaus. Driver I (3.68 points_per_race, perf_score 2.241) with avg_pit_ms of 144,040 demonstrates similar patterns to Driver H, suggesting both could benefit from targeted coaching on the same technical aspects.
+Recommendation: Driver G should receive targeted coaching next season, as their mid-tier performance (5.55 points_per_race, 4.212 perf_score) combined with standard pit times (133,363 ms) indicates the greatest potential for measurable improvement through skill development rather than technical changes."
+Unspecified,positive_driver,"Three Evidence-Backed Insights:
+• Driver G demonstrates the highest potential for improvement among mid-tier performers, scoring 5.55 points_per_race with a perf_score of 4.212 and manageable avg_pit_ms of 133,363. This driver already shows competency (positive perf_score) while having substantial upside—scoring only 27% of Driver A's output suggests a multiple-fold improvement is achievable.
+• Driver H achieves 4.18 points_per_race with a perf_score of 2.703 but has the slowest avg_pit_ms at 147,885—approximately 22% slower than Driver A (120,640). This indicates coaching on pit approach, timing, and execution could yield immediate measurable gains, as the technical skills appear present but inefficiently applied.
+• Driver I scores 3.68 points_per_race with a perf_score of 2.241, positioning just below Driver H but with similar avg_pit_ms of 144,040. The close performance clustering of Drivers G, H, and I (spanning only 1.87 points_per_race) suggests they're at a similar skill level where targeted coaching could create breakthrough improvements.
+Recommendation: Driver G shows the most potential for improvement with targeted coaching, combining solid baseline performance (5.55 points_per_race, 4.212 perf_score) with reasonable pit efficiency (133,363 ms) that indicates coaching can focus on racecraft and strategy rather than fundamental technical corrections."
+Unspecified,positive_driver,"Three Evidence-Backed Insights:
+• Driver G demonstrates the highest potential for improvement among mid-tier performers, scoring 5.55 points_per_race with a perf_score of 4.212 and manageable avg_pit_ms of 133,363. This driver already shows competency (positive perf_score) while having substantial upside—scoring only 27% of Driver A's output suggests a multiple-fold improvement is achievable.
+• Driver H achieves 4.18 points_per_race with a perf_score of 2.703 but has the slowest avg_pit_ms at 147,885—approximately 22% slower than Driver A (120,640). This indicates coaching on pit approach, timing, and execution could yield immediate measurable gains, as the technical skills appear present but inefficiently applied.
+• Driver I scores 3.68 points_per_race with a perf_score of 2.241, positioning just below Driver H but with similar avg_pit_ms of 144,040. The close performance clustering of Drivers G, H, and I (spanning only 1.87 points_per_race) suggests they're at a similar skill level where targeted coaching could create breakthrough improvements.
+Recommendation: Driver G shows the most potential for improvement with targeted coaching, combining solid baseline performance (5.55 points_per_race, 4.212 perf_score) with reasonable pit efficiency (133,363 ms) that indicates coaching can focus on racecraft and strategy rather than fundamental technical corrections."
+Unspecified,prime_constructor,"Three Evidence-Backed Insights:
+• If Ferrari fields Drivers B and C, they demonstrate exceptional combined performance: Driver B achieves 14.00 points_per_race (perf_score 12.707) and Driver C achieves 13.86 points_per_race (perf_score 12.550). This pairing delivers 27.86 combined points_per_race, significantly ahead of any other plausible two-driver combination.
+• Ferrari's drivers show consistent pit performance with Driver B at 129,265 ms and Driver C at 131,370 ms—both within 2,000 ms of each other. This 1.5% variation indicates unified strategy execution and team coordination, while Driver A's team (120,640 ms) is 7% faster, suggesting superior pit crew efficiency rather than strategy.
+• However, Driver A individually outperforms both Ferrari drivers combined on perf_score: Driver A's 19.430 perf_score exceeds Driver B (12.707) by 53% and Driver C (12.550) by 55%. While Ferrari may have the strongest two-driver strategy, Driver A's team demonstrates superior individual performance optimization.
+Recommendation: Yes, Ferrari has the strongest two-driver strategy based on Drivers B and C combining for 27.86 points_per_race (12.707 + 12.550 perf_score), but this advantage comes from driver pairing rather than operational superiority, as Driver A's team shows faster pit execution (120,640 ms vs Ferrari's ~130,000 ms average).
+Gemini 2.5 pro:
+Here are the analyses for each prompt variant."
+Unspecified,constructor_opps,"There is a significant opportunity to improve pit stop times for most top teams. Driver D has an avg_pit_ms of 60501, while the other five top drivers (A, B, C, E, F) have pit times ranging from 120640 ms (Driver A) to 144234 ms (Driver F), more than double Driver D's time.
+A clear performance gap exists between the top driver and the rest of the leading pack. Driver A's perf_score is 19.430, which is substantially higher than the next highest, Driver B, at 12.707. This suggests an opportunity for other top teams to analyze the factors contributing to Driver A's superior performance.
+The teams for Drivers E and F are falling behind the other top teams in multiple metrics. They have the lowest points_per_race among the top six (11.18 and 10.91 respectively) and the highest avg_pit_ms (143643 and 144234 respectively), indicating a dual opportunity for improvement in both race performance and pit strategy.
+Recommendation: Top teams should investigate methods to drastically reduce pit stop times and close the driver performance gap to the leader."
+Unspecified,negative_driver,"Driver V has the lowest performance score (perf_score) of the entire field at -1.113, which is significantly lower than the second-to-last driver's score of -0.688.
+This weak performance score is matched by a very low point-scoring record, with an average of only 0.09 points_per_race.
+While some drivers with low scores have exceptionally fast or slow pit times, Driver V's avg_pit_ms of 120419 is middling, indicating no single area of statistical strength to offset their poor overall results.
+Recommendation: Driver V most needs corrective coaching, as they rank last in perf_score and second-to-last in points_per_race."
+Unspecified,negative_driver,"Driver V has the lowest performance score (perf_score) of the entire field at -1.113, which is significantly lower than the second-to-last driver's score of -0.688.
+This weak performance score is matched by a very low point-scoring record, with an average of only 0.09 points_per_race.
+While some drivers with low scores have exceptionally fast or slow pit times, Driver V's avg_pit_ms of 120419 is middling, indicating no single area of statistical strength to offset their poor overall results.
+Recommendation: Driver V most needs corrective coaching, as they rank last in perf_score and second-to-last in points_per_race."
+Unspecified,neutral_driver,"Driver V exhibits the lowest overall performance, with a perf_score of -1.113, making them the only driver with a score below -1.0.
+The driver's results are consistently poor, as shown by their points_per_race average of only 0.09, the second lowest in the dataset.
+Unlike other low-performing drivers who might have a specific weakness (e.g., Driver J's high avg_pit_ms of 172745), Driver V's statistics are weak across the board, suggesting a need for comprehensive coaching.
+Recommendation: Targeted coaching should be directed at Driver V to address their bottom-ranking perf_score and poor point accumulation."
+Unspecified,neutral_driver_demo,"Driver V exhibits the lowest overall performance, with a perf_score of -1.113, making them the only driver with a score below -1.0.
+The driver's results are consistently poor, as shown by their points_per_race average of only 0.09, the second lowest in the dataset.
+Unlike other low-performing drivers who might have a specific weakness (e.g., Driver J's high avg_pit_ms of 172745), Driver V's statistics are weak across the board, suggesting a need for comprehensive coaching.
+Recommendation: Targeted coaching should be directed at Driver V to address their bottom-ranking perf_score and poor point accumulation."
+Unspecified,positive_driver,"Driver J has the single worst avg_pit_ms in the dataset at 172745, which is over 10,000 ms slower than the next slowest driver, indicating a clear, specific area for improvement.
+Despite this significant disadvantage in the pits, Driver J still manages to achieve a positive perf_score of 0.500, suggesting their on-track performance is commendable.
+This positive performance translates into points, with an average of 2.23 points_per_race, which is higher than nine other drivers, some of whom have much faster pit stops.
+Recommendation: Driver J shows the most potential for improvement, as coaching on pit procedures could unlock significant gains on top of their already solid performance."
+Unspecified,positive_driver,"Driver J has the single worst avg_pit_ms in the dataset at 172745, which is over 10,000 ms slower than the next slowest driver, indicating a clear, specific area for improvement.
+Despite this significant disadvantage in the pits, Driver J still manages to achieve a positive perf_score of 0.500, suggesting their on-track performance is commendable.
+This positive performance translates into points, with an average of 2.23 points_per_race, which is higher than nine other drivers, some of whom have much faster pit stops.
+Recommendation: Driver J shows the most potential for improvement, as coaching on pit procedures could unlock significant gains on top of their already solid performance."
+Unspecified,prime_constructor,"The provided statistics are presented for individual, anonymized drivers (e.g., ""Driver A"", ""Driver B"") and contain no information linking these drivers to their respective constructor teams.
+The dataset does not include metrics that would directly evaluate ""strategy,"" such as tire compound usage, undercut effectiveness, or laps led relative to starting position.
+Because the data does not identify any teams, it is impossible to isolate the performance of Ferrari's drivers or analyze their strategic outcomes."

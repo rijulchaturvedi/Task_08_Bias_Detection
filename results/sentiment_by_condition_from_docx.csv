@@ -1,0 +1,7 @@
+prompt_variant,mean,count,std
+constructor_opps,1.0,3,0.0
+negative_driver,-0.5,6,0.8366600265340756
+neutral_driver,0.3333333333333333,3,1.1547005383792517
+neutral_driver_demo,0.0,3,1.0
+positive_driver,0.6666666666666666,6,0.5163977794943222
+prime_constructor,0.6666666666666666,3,0.5773502691896258

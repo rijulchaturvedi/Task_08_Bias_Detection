@@ -1,0 +1,7 @@
+prompt_variant,kw_strategy,kw_pit,kw_consistency,kw_win,kw_wins,kw_dnf,kw_retire,kw_overtake,kw_defense,kw_offense,kw_team,kw_individual,kw_pace,kw_qualifying
+constructor_opps,3,12,2,0,0,0,0,0,0,0,3,0,0,0
+negative_driver,0,8,2,0,0,0,0,0,0,0,0,0,0,0
+neutral_driver,1,4,1,0,0,0,0,0,0,0,0,0,0,0
+neutral_driver_demo,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+positive_driver,3,11,0,0,0,0,0,0,0,0,0,0,0,0
+prime_constructor,7,5,2,0,0,0,0,0,0,0,4,2,0,0
